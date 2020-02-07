@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="10656" started-at="2020-02-07T09:43:43Z" finished-at="2020-02-07T09:43:54Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="10656" started-at="2020-02-07T09:43:43Z" finished-at="2020-02-07T09:43:54Z">
+      <class name="com.pratian.apiassignment.tests.memberservice.SearchMemberByFactor">
+        <test-method status="PASS" signature="post(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.pratian.apiassignment.tests.memberservice.SearchMemberByFactor@1753acfe]" name="post" duration-ms="10097" started-at="2020-02-07T15:13:44Z" data-provider="getdata" finished-at="2020-02-07T15:13:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[subscriberID]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12307034]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[childSearchParameter]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[null]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[columnName]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[subscriberID]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[sortingOrder]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[ASC]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[sortingType]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[ALIKE]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[sortOptions]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[null]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[pageNumber]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[pageOffset]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[50]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[subscriberIDList]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[null]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[planIDList]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[null]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[centerIDList]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[null]]>
+              </value>
+            </param>
+            <param index="22">
+              <value>
+                <![CDATA[duration]]>
+              </value>
+            </param>
+            <param index="23">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- post -->
+      </class> <!-- com.pratian.apiassignment.tests.memberservice.SearchMemberByFactor -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
