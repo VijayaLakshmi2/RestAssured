@@ -24,4 +24,15 @@ public class PostServices extends TestBase{
 				.then().extract().response();
 		return response;
 	}
+	
+	public Response postActivityByBodyAsString(String baseURI,String abstractionName,String body)
+	{
+		RestAssured.baseURI=baseURI;
+		Response response=RestAssured.given()
+				.header("Content-Type", "application/json")
+				.body(body)
+				.post(abstractionName)
+				.then().extract().response();
+		return response;
+	}
 }

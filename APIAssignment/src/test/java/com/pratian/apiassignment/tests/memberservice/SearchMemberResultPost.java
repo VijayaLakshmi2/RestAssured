@@ -1,8 +1,6 @@
 package com.pratian.apiassignment.tests.memberservice;
 
 import java.sql.ResultSet;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
@@ -35,52 +33,14 @@ public class SearchMemberResultPost extends TestBase{
 		}
 		
 		//Get Search Member Results
-		@SuppressWarnings({ "unchecked" })
 		@Test(dataProvider = "getdata")
-		public void post(String param1,String paramvalue1,String param2,String paramvalue2,
-				String param3,String paramvalue3,String param4,String paramvalue4,String param5,
-				String paramvalue5,String param6,String paramvalue6,String param7,String paramvalue7,
-				String param8,String paramvalue8,String param9,String paramvalue9,String param10,
-				String paramvalue10,String param11,String paramvalue11,String param12,String paramvalue12) throws Exception{
+		public void postSearchMemberResult(String body) throws Exception{
 			
 			String rowcount = null;
-			
-			JSONObject requestParams=new JSONObject();
-			
-			JSONObject searchParameter=new JSONObject();
-			
-			searchParameter.put(param1, paramvalue1);
-			requestParams.put("searchParameter", searchParameter);
-			
-			requestParams.put(param2, paramvalue2);
-			
-			JSONArray defaultSortOptions = new JSONArray();
-			
-			JSONObject defaultSortOptions1=new JSONObject();
-			defaultSortOptions1.put(param3, paramvalue3);
-			defaultSortOptions1.put(param4, paramvalue4);
-			defaultSortOptions1.put(param5, paramvalue5);
-			
-			defaultSortOptions.add(defaultSortOptions1);
-			requestParams.put("defaultSortOptions", defaultSortOptions);
-			
-			requestParams.put(param6, paramvalue6);
-			
-			JSONObject paginationOption=new JSONObject();
-			
-			paginationOption.put(param7, paramvalue7);
-			paginationOption.put(param8, paramvalue8);
-			
-			requestParams.put("paginationOption", paginationOption);
-			
-			requestParams.put(param9, paramvalue9);
-			requestParams.put(param10, paramvalue10);
-			requestParams.put(param11, paramvalue11);
-			requestParams.put(param12, paramvalue12);
 
 			PostServices services=new PostServices();
 			
-			Response response=services.postActivityByBody(properties.getProperty("MemberBaseURI"),properties.getProperty("SearchMemberResult"), requestParams);
+			Response response=services.postActivityByBodyAsString(properties.getProperty("MemberBaseURI"),properties.getProperty("SearchMemberResult"), body);
 			
 			//System.out.println(response.body().asString());
 			
